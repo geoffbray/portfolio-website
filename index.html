@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>  
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div> 
+               
+            <div class="right-side">
+                <div class="brand">
+                    <div>GEOFFREY BRAY</div>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(portfolio-images/moon\ square.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Moon Beam is in a square of light
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(portfolio-images/moon\ whisker.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Moon Beam's whiskers curl in the light
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(portfolio-images/moon\ shark.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Moon Beam has the jaws of a shark
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(portfolio-images/mook\ shadow.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Dunkin likes high places
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(portfolio-images/mook\ hat.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            The cat is a hat
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(portfolio-images/momma\ and\ mook.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Moon beams kitten
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(portfolio-images/dew\ eyes.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Georgie has the eyes of a doe
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(portfolio-images/chickens.jpg)"></div>
+                    
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="" alt="">
+                        </div>
+                        
+
+                        <div class="subtitle">
+                            Our chickens Rosie and Buttercup
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

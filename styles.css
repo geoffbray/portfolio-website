@@ -1,0 +1,121 @@
+/*Master styles*/
+body {
+    margin:0px;
+}
+
+.container {
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+/*Nav styles*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+
+}
+
+.left-side {
+    display: flex;/*from top to bottom to left to right*/
+    
+}
+
+.nav-wrapper > .left-side > div { 
+    margin-right: 10px;/*moves home from about*/
+    font-size: 0.9em;
+    text-transform:uppercase;
+}
+
+.nav-link-wrapper {
+    height: 20px;  /*moves boarder up and down*/
+    border-bottom: 1px solid transparent; /*don't know what this does*/
+    transition: border-bottom 0.1s; /*speed at which transitions from grey to black*/
+}  
+
+.nav-link-wrapper a { 
+    color: #8a8a8a;
+    text-decoration: transparent;/*erases underline for home and about*/
+    transition: color 0.1s;/*home and about transition speed*/
+    
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+    font-size: 0.5em;
+    font-weight: normal;
+}
+.nav-link-wrapper a:hover {
+    color: black;
+    
+}
+
+/*portfolio styles*/
+
+.portfolio-items-wrapper{
+    display: grid;          /*stacks side by side*/
+    grid-template-columns: 1fr 1fr 1fr;  /*how many stack side by side*/
+}
+
+.portfolio-item-wrapper {
+    position: relative; /*to set up position of element*/
+}
+
+.portfolio-img-background {
+    height:350px;
+    width: 100%;   /*100% to adjust atomatically with hieght*/
+    background-size: cover; /*crops images to sit together*/
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute; /*forcing text to center of image..must have position relative in code*/
+    top: 0;  /*positions textwrapper at top*/
+    display: flex;  /*flex box parameters*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: transparent;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;    
+    
+}
+
+
+ .img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightgreen;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/*about section*/
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.profile-image-wrapper img {
+    width: 80%;
+
+
+}
+
+.profile-content-wrapper h1 {
+    color:teal;
+    
+}
+ 
+    
